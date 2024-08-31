@@ -1140,6 +1140,28 @@ p {
 #fh5co-offcanvas a.active {
   color: #0a75c7;
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+
 @media screen and (max-width: 768px) {
   #fh5co-offcanvas {
     display: block;
