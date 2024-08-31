@@ -203,7 +203,7 @@
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2 to-animate">
 						<h2 class="heading">Examens</h2>
-						<p class="sub-heading">Voici la liste des examens que nosu faisons.</p>
+						<p class="sub-heading">Voici la liste des examens que nous faisons.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -223,7 +223,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="fh5co-event to-animate-2">
-							<h3>MRéfraction Sous Cycloplégie</h3>
+							<h3>Réfraction Sous Cycloplégie</h3>
 							<span class="fh5co-event-meta">10.000FCFA</span>
 							<p>Cet examen permet d'évaluer correctement les besoins optiques, en particulier chez les enfants et les personnes ayant des difficultés à fixer correctement leurs yeux.</p>
 						</div>
@@ -246,6 +246,101 @@
 			</div>
 		</div>
 
+		
+		<div id="fh5co-menus" data-section="menu">
+			<div class="container">
+				<div class="row text-center fh5co-heading row-padded">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="heading to-animate">Horaires de service</h2>
+					</div>
+				</div>
+				<div class="row row-padded">
+					<div class="col-md-6">
+						<div class="fh5co-food-menu to-animate-2">
+							<ul>
+								<li>
+									<div class="fh5co-food-desc">
+										
+										<div>
+											<h3>Lundi</h3>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										8h 30 - 17h 
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										
+										<div>
+											<h3>Mercredi</h3>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										8h 30 - 17h 
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+										
+										<div>
+											<h3>Vendredi</h3>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										8h 30 - 17h 
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="fh5co-food-menu to-animate-2">
+							<ul>
+								<li>
+									<div class="fh5co-food-desc">
+
+										<div>
+											<h3>Mardi</h3>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										8h 30 - 17h 
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+
+										<div>
+											<h3>Jeudi</h3>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										8h 30 - 17h 
+									</div>
+								</li>
+								<li>
+									<div class="fh5co-food-desc">
+
+										<div>
+											<h3>Samedi</h3>
+										</div>
+									</div>
+									<div class="fh5co-food-pricing">
+										8h 30 - 17h 
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+			</div>
+		</div>
 		<div id="fh5co-contact" data-section="reservation">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
@@ -267,31 +362,39 @@
 						</ul>
 					</div>
 					<div class="col-md-6 to-animate-2">
-						<h3>Nous Conctater</h3>
-						<div class="form-group ">
-							<label for="name" class="sr-only">Nom</label>
-							<input id="name" class="form-control" placeholder="Name" type="text">
-						</div>
-						<div class="form-group ">
-							<label for="email" class="sr-only">Email</label>
-							<input id="email" class="form-control" placeholder="Email" type="email">
-						</div>
+						<h3>Nous Contacter</h3>
+						<form action="https://formspree.io/f/xrbzjwaj" method="post">
+							<div class="form-group">
+								<label for="name" class="sr-only">Nom</label>
+								<input id="name" name="name" class="form-control" placeholder="Nom" type="text" required>
+							</div>
+							<div class="form-group">
+								<label for="phone" class="sr-only">Numéro de Téléphone</label>
+								<input id="phone" name="phone" class="form-control" placeholder="Numéro de Téléphone" type="text" required>
+							</div>
+							<div class="form-group">
+								<label for="dob" class="sr-only">Date et lieu de naissance</label>
+								<input id="dob" name="dob" class="form-control" placeholder="Date &amp; Lieu de Naissance" type="text" required>
+							</div>
+							<div class="form-group">
+								<label for="status" class="sr-only">Statut Social</label>
+								<input id="status" name="status" class="form-control" placeholder="Statut Social" type="text" required>
+							</div>
+							<div class="form-group">
+								<label for="address" class="sr-only">Adresse</label>
+								<input id="address" name="address" class="form-control" placeholder="Adresse" type="text" required>
+							</div>
+							<div class="form-group">
+								<label for="message" class="sr-only">Message</label>
+								<textarea id="message" name="message" cols="30" rows="5" class="form-control" placeholder="Message" required></textarea>
+							</div>
+							<div class="form-group">
+								<input class="btn btn-primary" value="Send Message" type="submit">
+							</div>
+						</form>
 						
-						<div class="form-group ">
-							<label for="date" class="sr-only">Date</label>
-							<input id="date" class="form-control" placeholder="Date &amp; Time" type="text">
-						</div>
-
-
-							
-						<div class="form-group ">
-							<label for="message" class="sr-only">Message</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-						</div>
-						<div class="form-group ">
-							<input class="btn btn-primary" value="Send Message" type="submit">
-						</div>
-						</div>
+					  </div>
+					  
 				</div>
 			</div>
 		</div>
