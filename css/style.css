@@ -1106,6 +1106,12 @@ p {
   position: relative;
 }
 
+.card-img-top {
+  width: 100%; /* Assure que l'image occupe toute la largeur du conteneur */
+  height: 355px; /* Définir une hauteur fixe */
+  object-fit: cover; /* Maintient le ratio de l'image tout en remplissant le conteneur */
+  }
+
 #fh5co-offcanvas {
   display: block;
   height: 100%;
